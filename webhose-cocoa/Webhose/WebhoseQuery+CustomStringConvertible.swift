@@ -34,7 +34,7 @@ extension WebhoseQuery: CustomStringConvertible {
             description += "&ts=" + "\(timestamp)"
         }
         if let isFirst = isFirst {
-            description += "&is_first=" + "\(isFirst)"
+            description += "is_first:" + "\(isFirst)"
         }
         return description
     }
