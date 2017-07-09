@@ -11,4 +11,5 @@ public struct WebhoseQuery {
     public var siteType: SiteType?
     public let performanceScore: Int?
     public let timestamp: Int?
+    public let isFirst:Bool?
 }
