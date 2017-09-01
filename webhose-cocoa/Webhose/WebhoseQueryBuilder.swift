@@ -12,6 +12,7 @@ open class WebhoseQueryBuilder {
     open var performanceScore: Int?
     open var timestamp: Int?
     open var isFirst: Bool?
+    open var sort: String?
     
     public typealias BuilderClosure = (WebhoseQueryBuilder) -> Void
     
@@ -35,5 +36,7 @@ public extension WebhoseQuery {
         self.siteType = builder.siteType
         self.timestamp = builder.timestamp
         self.isFirst = builder.isFirst
+        self.sort = builder.sort
+        
     }
 }

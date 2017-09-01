@@ -12,4 +12,5 @@ public struct WebhoseQuery {
     public let performanceScore: Int?
     public let timestamp: Int?
     public let isFirst:Bool?
+    public let sort: String?
 }
