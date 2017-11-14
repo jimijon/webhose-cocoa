@@ -31,17 +31,17 @@ extension WebhoseQuery: CustomStringConvertible {
             description += "performance_score:>" + "\(performanceScore)" + " "
         }
         if let timestamp = timestamp {
-            description += "&ts=" + "\(timestamp)"
+            description += "&ts=" + "\(timestamp)" + " "
         }
         if let isFirst = isFirst {
-            description += "is_first:" + "\(isFirst)"
+            description += "is_first:" + "\(isFirst)" + " "
         }
         if let sort = sort {
-            description += "sort:" + "\(sort)"
+            description += "sort:" + "\(sort)" + " "
         }
         return description
     }
-
+    
     fileprivate func concatenate(_ terms: [String]?, WithSeparator separator: String) -> String {
         var result = ""
         if let terms = terms {
@@ -59,3 +59,4 @@ extension WebhoseQuery: CustomStringConvertible {
         return result
     }
 }
+
