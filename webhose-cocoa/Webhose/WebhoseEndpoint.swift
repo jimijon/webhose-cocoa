@@ -2,7 +2,7 @@ class WebhoseEndpoint {
     static let endpoint = "https://webhose.io"
 
     static func buildWithKey(_ key: String, AndQuery query: String) -> String {
-        return WebhoseEndpoint.endpoint + "/search?token=" + key + "&format=json&q=" + query
+        return WebhoseEndpoint.endpoint + "/search?token=" + key + "&format=json&sort=crawled&q=" + query
     }
 
     static func buildWithKey(_ key: String, AndQuery query: WebhoseQuery) -> String {

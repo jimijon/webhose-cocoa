@@ -37,7 +37,7 @@ extension WebhoseQuery: CustomStringConvertible {
             description += "is_first:" + "\(isFirst)" + " "
         }
         if let sort = sort {
-            description += "sort:" + "\(sort)" + " "
+//            description += "sort:" + "\(sort)" + " "
         }
         return description
     }
